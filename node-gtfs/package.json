@@ -1,0 +1,21 @@
+{
+  "name": "gtfs",
+  "description": "Download GTFS transit data into mongodb and expose routes, stops, times and more",
+  "version": "0.0.2",
+  "author": "Brendan Nee <me@bn.ee>",
+  "dependencies": {
+      "express": ">= 3.1.x"
+    , "mongoose": ">= 3.5.x"
+    , "mongodb": ">= 1.2.x"
+    , "csv": ">= 0.2.x"
+    , "async": ">= 0.2.x"
+    , "request": ">= 2.14.x"
+    , "underscore": ">= 1.4.4"
+  },
+  "scripts": {
+    "download": "node scripts/download.js"
+  },
+  "keywords": ["transit","gtfs","transportation"],
+  "repository": "git://github.com/brendannee/node-gtfs",
+  "main": "index"
+}

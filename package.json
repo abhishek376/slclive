@@ -1,0 +1,27 @@
+{
+  "name": "gtfs",
+  "description": "Download GTFS transit data into mongodb and expose routes, stops, times and more",
+  "version": "0.0.1",
+  "author": "SLC Live",
+  "private": true,
+  "dependencies": {
+       "firebase": "0.5.1",
+    "xml2js": "0.2.6",
+    "restler": "2.0.1",
+    "crc": "0.2.0",
+    "express": ">= 3.1.x",
+    "mongoose": ">= 3.5.x"
+    "mongodb": ">= 1.2.x",
+    "csv": ">= 0.2.x",
+    "async": ">= 0.2.x",
+    "request": ">= 2.14.x",
+    "underscore": ">= 1.4.4"
+  },
+  "scripts": {
+    "download": "node scripts/download.js"
+  },
+  "keywords": ["transit","gtfs","transportation"],
+  "repository": "git://github.com/abhishek376/slclive",
+  "main": "index"
+}
+
