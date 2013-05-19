@@ -1,3 +1,5 @@
 .db
 downloads
 gtfs
+
+*.log
