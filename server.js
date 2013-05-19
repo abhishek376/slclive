@@ -17,7 +17,7 @@
     var firebusRef = new Firebase('https://slcrider.firebaseio.com');
     
     var lastTime = Date.now() - 3600000;
-    var updateInterval = 12000;
+    var updateInterval = 2000;
     
     var agencyList = [ 'uta' ];
     
@@ -78,8 +78,10 @@
         });
     }
     
+getRoutes();
+
     setInterval((function() {
-            getRoutes();
-      updateFirebaseWithData();
-            
+        if(routes){
+             updateFirebaseWithData();
+        }
     }), updateInterval);
