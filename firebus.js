@@ -19,7 +19,7 @@ function newBus(bus, firebaseId) {
     var busLatLng = new google.maps.LatLng(bus.lat, bus.lon);
     var directionColor = bus.dirTag && bus.dirTag.indexOf('OB') > -1 ? "7094FF" : "FF6262";
     var marker = new google.maps.Marker({ icon: 'http://chart.googleapis.com/chart?chst=d_bubble_icon_text_small&chld=bus|bbT|'+bus.routeTag+'|' + directionColor + '|eee', position: busLatLng, map: map });
-    buses[firebaseId].marker = marker;
+    buses[firebaseId] = marker;
     buses[firebaseId].info = bus;
 }
 
@@ -46,3 +46,4 @@ f.on("child_removed", function(s) {
     delete buses[s.name()];
     }
 });
+
